@@ -13,13 +13,53 @@ body {
     text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
 
 ul {
     list-style-type: none;
 }
 
+img {
+    display: block;
+}
+
 button {
     cursor: pointer;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.vs-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /* Header */
@@ -69,10 +109,45 @@ button {
     color: #404bbf;
 }
 
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.page-header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-links {
+    display: flex;
+    gap: 40px;
+}
+
+.navigation {
+    display: block;
+    padding: 24px 0;
+}
+
+.page-contact {
+    display: flex;
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    gap: 40px;
+}
 /* SECTION 1  */
 
 .section-one-color {
     background-color: #2e2f42;
+    padding: 188px 0;
 }
 
 .header-one {
@@ -82,6 +157,9 @@ button {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button-style {
@@ -92,6 +170,14 @@ button {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button-style:hover,
@@ -107,6 +193,7 @@ button {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .header-text {
@@ -118,8 +205,20 @@ button {
 
 .section-two-color {
     background: #f4f4fd;
+    padding: 120px 0;
 }
 
+.agvantages {
+    padding: 120px 0;
+}
+
+.advantages-list {
+    display: flex;
+    gap: 24px;
+}
+.advantages-info {
+    width: calc((100% - 72px) / 4);
+}
 /* SECTION 3  */
 
 .header-team {
@@ -130,10 +229,13 @@ button {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .team-color {
     background: #fff;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
@@ -143,6 +245,8 @@ button {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-position {
@@ -151,7 +255,18 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
 }
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
+.team-inf {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 
 /* SECTION 4  */
 
@@ -165,12 +280,13 @@ button {
     text-transform: capitalize;
 }
 
-.project-card {
+.project-card-name {
     color: #2e2f42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .project-card-ds {
@@ -180,10 +296,36 @@ button {
     letter-spacing: 0.02em;
 }
 
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.project-card {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.header-portfolio {
+    margin-bottom: 72px;
+}
+
+.portfolio-items {
+    width: calc((100% - 48px) / 3);
+}
 /* FOOTER */
 
 .footer-color {
     background: #2e2f42;
+    padding: 100px 0;
 }
 
 .footer-text {
@@ -201,6 +343,8 @@ button {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-second-bottom {
