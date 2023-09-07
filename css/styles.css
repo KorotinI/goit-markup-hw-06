@@ -1,6 +1,3 @@
-
-
-
 /* body */
 
 body {
@@ -24,7 +21,8 @@ p {
     margin-bottom: 0;
 }
 
-ul, ol {
+ul,
+ol {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
@@ -72,10 +70,13 @@ button {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: flex;
+    margin-right: 76px;
 }
 
 .logo-second {
     color: #2e2f42;
+ 
 }
 
 .navigation {
@@ -143,6 +144,7 @@ button {
     padding: 24px 0;
     gap: 40px;
 }
+
 /* SECTION 1  */
 
 .section-one-color {
@@ -198,7 +200,7 @@ button {
 
 .header-text {
     color: #434455;
-    font-size: 16px;
+    font-size:16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
@@ -208,7 +210,7 @@ button {
     padding: 120px 0;
 }
 
-.agvantages {
+.advantages {
     padding: 120px 0;
 }
 
@@ -216,9 +218,11 @@ button {
     display: flex;
     gap: 24px;
 }
+
 .advantages-info {
     width: calc((100% - 72px) / 4);
 }
+
 /* SECTION 3  */
 
 .header-team {
@@ -257,6 +261,7 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
 }
+
 .team-list {
     display: flex;
     gap: 24px;
@@ -321,6 +326,7 @@ button {
 .portfolio-items {
     width: calc((100% - 48px) / 3);
 }
+
 /* FOOTER */
 
 .footer-color {
