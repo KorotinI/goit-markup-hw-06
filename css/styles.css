@@ -172,7 +172,7 @@ button {
     width: 100%;
 }
 
-/* SECTION 1  */
+/* SECTION 1 + button */
 
 .section-one-color {
     background-color: #2e2f42;
@@ -226,7 +226,7 @@ button {
     background-color: #404bbf;
 }
 
-/* SECTION 2  */
+/* advantages SECTION 2  */
 
 .header-advantages {
     color: #2e2f42;
@@ -260,6 +260,16 @@ button {
 
 .advantages-info {
     width: calc((100% - 72px) / 4);
+}
+.advantages-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    border: 1px solid #8e8f99;
 }
 
 /* SECTION 3  */
