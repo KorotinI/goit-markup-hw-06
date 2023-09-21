@@ -573,7 +573,7 @@ button {
  .subscribe-icon {
      margin-left: 16px;
  }
- /* ================ BACKDROP ================ */
+ /* BACKDROP */
  .backdrop {
      position: fixed;
      top: 0;
@@ -583,8 +583,7 @@ button {
      height: 100%;
      background-color: rgba(46, 47, 66, 0.4);
      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
      opacity: 0;
      visibility: hidden;
      pointer-events: none;
@@ -595,10 +594,7 @@ button {
      visibility: visible;
      pointer-events: auto;
  }
-
- /* ================ /BACKDROP ================ */
-
- /* ================ MODAL WINDOW ================ */
+    /*MODAL*/
  .modal {
      position: absolute;
      top: 50%;
@@ -609,12 +605,11 @@ button {
      padding: 72px 24px 24px 24px;
      border-radius: 4px;
      background-color: #fcfcfc;
-     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-         0px 2px 1px rgba(0, 0, 0, 0.2);
+     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .close-btn {
+ .button-close {
      display: flex;
      align-items: center;
      justify-content: center;
@@ -625,28 +620,27 @@ button {
      right: 24px;
      line-height: 0;
      background-color: #e7e9fc;
-     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
      border: 1px solid rgba(0, 0, 0, 0.1);
      border-radius: 50%;
      padding: 0;
  }
 
- .close-btn:hover,
- .close-btn:focus {
+ .button-close:hover,
+ .button-close:focus {
      background-color: #404bbf;
      border: none;
      fill: #ffffff;
  }
 
- .close-btn-icon {
+ .button-close-icon {
      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  /* ================ /MODAL WINDOW ================ */
 
  /* ================ MODAL FORM ================ */
- .review-form-description {
+ .modal-description {
      color: #2e2f42;
      text-align: center;
      font-size: 16px;
@@ -656,15 +650,15 @@ button {
      margin-bottom: 16px;
  }
 
- .review-form-field-wrapper {
+ .modal-field-wrapper {
      margin-bottom: 8px;
  }
 
- .review-margin-comment {
+ .remodal-comment {
      margin-bottom: 16px;
  }
 
- .review-form-field-label {
+ .reviewmodal-label {
      display: block;
      color: #8e8f99;
      font-size: 12px;
@@ -673,11 +667,11 @@ button {
      margin-bottom: 4px;
  }
 
- .review-form-input-wrapper {
+ .modal-input-wrapper {
      position: relative;
  }
 
- .review-form-input {
+ .modal-input {
      width: 100%;
      height: 40px;
      border-radius: 4px;
@@ -688,12 +682,12 @@ button {
      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .review-form-input:focus {
+ .modal-input:focus {
      border-color: #4d5ae5;
      outline: transparent;
  }
 
- .review-form-field-icon {
+ .modal-field-icon {
      position: absolute;
      top: 50%;
      left: 16px;
@@ -701,11 +695,11 @@ button {
      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .review-form-input:focus+.review-form-field-icon {
+ .modal-input:focus+.modal-field-icon {
      fill: #4d5ae5;
  }
 
- .review-form-comment {
+ .modal-comment {
      display: block;
      width: 100%;
      height: 120px;
@@ -726,20 +720,20 @@ button {
      outline: transparent;
  }
 
- .review-form-comment::placeholder {
+ .modal-comment::placeholder {
      color: rgba(46, 47, 66, 0.4);
  }
 
- .review-form-comment:focus {
+ .modal-comment:focus {
      border-color: #4d5ae5;
      outline: transparent;
  }
 
- .review-form-checkbox-wrapper {
+ .modal-checkbox-wrapper {
      margin-bottom: 24px;
  }
 
- .review-form-checkbox-label {
+ .modal-checkbox-label {
      font-size: 12px;
      font-weight: 400;
      line-height: 1.17;
@@ -747,7 +741,7 @@ button {
      color: #8e8f99;
  }
 
- .review-form-own-checkbox {
+ .modal-my-checkbox {
      display: inline-flex;
      justify-content: center;
      align-items: center;
@@ -764,21 +758,19 @@ button {
          fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .review-form-privacy-link {
+ .modal-privacy-link {
      color: #4d5ae5;
  }
 
- .review-form-checkbox:checked+.review-form-checkbox-label>.review-form-own-checkbox {
+ .modal-checkbox:checked+.modal-checkbox-label>.modal-own-checkbox {
      background-color: #404bbf;
      border: none;
      fill: #f4f4fd;
  }
-
- .review-form-checkbox:focus+.review-form-checkbox-label>.review-form-own-checkbox {
+.modal-checkbox:focus+.modal-checkbox-label>.modal-my-checkbox {
      outline: 2px solid rgba(0, 0, 255, 0.5);
  }
-
- .review-form-submit {
+.modal-submit {
      color: #fff;
      background: #4d5ae5;
      font-family: "Roboto", sans-serif;
@@ -797,9 +789,7 @@ button {
      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
  }
 
- .review-form-submit:hover,
- .review-form-submit:focus {
+ .modal-submit:hover,
+ .modal-submit:focus {
      background-color: #404bbf;
  }
-
- /* ================ /MODAL FORM ================ */
