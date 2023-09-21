@@ -595,7 +595,7 @@ button {
      pointer-events: auto;
  }
     /*MODAL*/
- .modal {
+ .modal-field {
      position: absolute;
      top: 50%;
      left: 50%;
