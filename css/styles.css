@@ -640,6 +640,7 @@ button {
 
 
  /*MODAL FORMS*/
+ 
  .modal-description {
      color: #2e2f42;
      text-align: center;
@@ -762,15 +763,17 @@ button {
      color: #4d5ae5;
  }
 
- .modal-checkbox:checked+.modal-checkbox-label>.modal-own-checkbox {
+ .modal-checkbox:checked+.modal-checkbox-label>.modal-my-checkbox {
      background-color: #404bbf;
      border: none;
      fill: #f4f4fd;
  }
-.modal-checkbox:focus+.modal-checkbox-label>.modal-my-checkbox {
+
+ .modal-checkbox:focus+.modal-checkbox-label>.modal-my-checkbox {
      outline: 2px solid rgba(0, 0, 255, 0.5);
  }
-.modal-submit {
+
+ .modal-submit {
      color: #fff;
      background: #4d5ae5;
      font-family: "Roboto", sans-serif;
