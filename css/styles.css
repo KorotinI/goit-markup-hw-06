@@ -700,7 +700,7 @@ button {
      fill: #4d5ae5;
  }
 
- .modal-comment {
+ .modal-form-comment {
      display: block;
      width: 100%;
      height: 120px;
@@ -721,11 +721,11 @@ button {
      outline: transparent;
  }
 
- .modal-comment::placeholder {
+ .modal-form-comment::placeholder {
      color: rgba(46, 47, 66, 0.4);
  }
 
- .modal-comment:focus {
+ .modal-form-comment:focus {
      border-color: #4d5ae5;
      outline: transparent;
  }
