@@ -405,7 +405,7 @@ button {
     background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../../images/Images-Hero/hero-mobile.jpg);
+        url(../images/Images-Hero/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -456,7 +456,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../../images/Images-Hero/hero-mobile@2x.jpg);
+            url(../images/Images-Hero/hero-mobile@2x.jpg);
     }
 }
 
@@ -469,7 +469,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../../images/Images-Hero/hero-tablet.jpg);
+            url(../images/Images-Hero/hero-tablet.jpg);
     }
 
     .header-one {
@@ -490,7 +490,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../../images/Images-Hero/hero-tablet@2x.jpg);
+            url(../images/Images-Hero/hero-tablet@2x.jpg);
     }
 }
 
@@ -501,7 +501,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../../images/Images-Hero/hero-desktop.jpg);
+            url(../images/Images-Hero/hero-desktop.jpg);
     }
 
     .button-style {
@@ -516,7 +516,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
         background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../../images/Images-Hero/hero-desktop@2x.jpg);
+            url(../images/Images-Hero/hero-desktop@2x.jpg);
     }
 }
 
